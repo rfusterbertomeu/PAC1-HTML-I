@@ -23,7 +23,6 @@
   "author": "Roser Fuster Bertomeu",
   "license": "ISC",
   "dependencies": {
-    "img-slider": "^2.2.0",
     "jquery": "^3.6.4",
     "luxon": "^3.3.0"
   }
