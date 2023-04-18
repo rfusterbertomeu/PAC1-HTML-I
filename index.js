@@ -1,6 +1,9 @@
+
+import { DateTime } from 'luxon';
 var index = 0;
 var slides = document.getElementsByClassName("slider");
-
+var output = DateTime.now().plus({ days: 1 }).toRelativeCalendar();
+console.log(output);
 
 var slidesAuto = document.getElementsByClassName("sliderAutomatic");
 if(slides.length != 0){slides[index].style.display = "block";}
