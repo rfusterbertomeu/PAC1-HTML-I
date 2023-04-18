@@ -6,8 +6,6 @@
     --color-gris: #444451;
 }
 
-
-
 html {
     height: 100%;
     font-family: "Inter", sans-serif;
@@ -48,7 +46,7 @@ header a:hover {
 
 body.portada {
     height: 100%;
-    background-image: url('../img/oliva.jpg');
+    background-image: url("../img/oliva.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,7 +93,6 @@ body.portada {
     text-decoration: none;
     border-bottom: initial;
 }
-
 
 /** DISPOSITIU MÒBIL **/
 @media screen and (max-width: 43rem) {
@@ -160,7 +157,6 @@ body.portada {
     .marge {
         margin-left: 10%;
         margin-right: 10%;
-
     }
 
     /** COLUMNES **/
@@ -170,7 +166,6 @@ body.portada {
         grid-auto-rows: auto;
         gap: 0px;
     }
-
 
     .col_3 {
         display: grid;
@@ -208,7 +203,6 @@ body.portada {
     .marge {
         margin-left: 20%;
         margin-right: 20%;
-
     }
 
     /** COLUMNES **/
@@ -235,7 +229,6 @@ body.portada {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-auto-rows: minmax(100px, auto);
         gap: 20px;
-
     }
 
     /** MENU **/
@@ -371,7 +364,6 @@ footer a:hover {
     font-weight: 800;
 }
 
-
 /** ALINEACIO **/
 .centrat {
     text-align: center;
@@ -460,7 +452,6 @@ ol.llista_fonts>li {
 ol.llista_fonts a {
     color: var(--color-gris);
     text-decoration: none;
-
 }
 
 ol.llista_fonts a:hover {
@@ -472,7 +463,6 @@ ol.llista_fonts a:visited {
     color: var(--color-primari);
     text-decoration: none;
 }
-
 
 /** CARROUSEL IMATGES **/
 .slider-container {
@@ -499,9 +489,11 @@ ol.llista_fonts a:visited {
     text-align: center;
 }
 
-#map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+.alerta {
+    opacity: 0.7;
+    padding: 20px;
+    background-color: var(--color-primari);
+    color: var(--color-secundari);
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
