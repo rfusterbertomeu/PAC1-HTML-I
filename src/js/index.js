@@ -18,7 +18,8 @@ if (slidesAuto.length != 0) {
 if (horari_box != null) {
   horari();
 }
-
+document.querySelector('#prev').addEventListener('click', prev);
+document.querySelector('#next').addEventListener('click', next);
 function sliderAuto() {
   slidesAuto[index].style.display = "none";
   index += 1;
