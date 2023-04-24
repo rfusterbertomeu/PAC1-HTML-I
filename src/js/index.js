@@ -80,14 +80,18 @@ function horari() {
       textEstat = textEstat + "OBERT";
     } else {
       textEstat = textEstat + "TANCAT. Obri ";
-      if (diaActual == "Dilluns") {
+      if (diaActual == "Diumenge" &&   horaActual > "13:30") {
         textEstat =
           textEstat +
           DateTime.now().setLocale("ca").plus({ days: 2 }).toRelativeCalendar();
-      } else {
+      } else if( horaActual > "19:00" ){
         textEstat =
           textEstat +
           DateTime.now().setLocale("ca").plus({ days: 1 }).toRelativeCalendar();
+      } else {
+        textEstat =
+          textEstat +
+          DateTime.now().setLocale("ca").plus({ days: 0 }).toRelativeCalendar();
       }
     }
   } else {
@@ -109,14 +113,18 @@ function horari() {
       textEstat = textEstat + "OBERT";
     } else {
       textEstat = textEstat + "TANCAT. Obri ";
-      if (diaActual == "Dilluns") {
+      if (diaActual == "Diumenge" &&   horaActual > "13:30") {
         textEstat =
           textEstat +
           DateTime.now().setLocale("ca").plus({ days: 2 }).toRelativeCalendar();
-      } else {
+      } else if( horaActual > "20:00" ){
         textEstat =
           textEstat +
           DateTime.now().setLocale("ca").plus({ days: 1 }).toRelativeCalendar();
+      } else {
+        textEstat =
+          textEstat +
+          DateTime.now().setLocale("ca").plus({ days: 0 }).toRelativeCalendar();
       }
     }
   }
