@@ -122,6 +122,18 @@ body.portada {
         gap: 20px;
     }
 
+    .categoria>footer {
+        padding: 1.5rem;
+        background-color: var(--color-gris);
+        color: var(--color-blanc) !important;
+        position: absolute;
+        margin-top: 5%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 1.1rem;
+    }
+
     /** IMATGES **/
     #logotip {
         max-width: 30%;
@@ -154,6 +166,7 @@ body.portada {
         grid-auto-rows: minmax(100px, auto);
         gap: 20px;
     }
+
 
     /** IMATGES **/
 
